@@ -1,0 +1,83 @@
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>FriesAi</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-900 text-white font-roboto">
+    <header class="bg-gray-800 p-4 flex justify-between items-center">
+        <div class="flex items-center space-x-4">
+            <h1 class="text-2xl font-bold">FriesAi</h1>
+        </div>
+    </header>
+    <main class="flex justify-center items-center h-screen">
+        <div class="bg-gray-800 p-8 rounded-lg w-full max-w-md">
+            <h2 class="text-3xl font-bold mb-4">AskFries</h2>
+            <div id="chatbox" class="bg-gray-700 p-4 rounded-lg h-64 overflow-y-auto mb-4">
+                <div class="text-gray-400">FriesAi: Hello am Fries! How can I help you today?</div>
+            </div>
+            <form id="chat-form" class="flex">
+                <input class="w-full p-2 rounded-lg bg-gray-700 text-white" id="user-input" type="text" placeholder="Type your message..." required/>
+                <button class="bg-green-500 px-4 py-2 rounded-full ml-2" type="submit">Send</button>
+            </form>
+        </div>
+    </main>
+    <footer class="bg-gray-800 p-4 mt-8">
+        <div class="flex justify-between items-center">
+            <div class="flex items-center space-x-4">
+                <h1 class="text-2xl font-bold">FriesAi</h1>
+            </div>
+            <nav class="space-x-4">
+                <a class="hover:text-green-500" href="#">Social Media</a>
+                <a class="hover:text-green-500" href="#">Stream Musics</a>
+                <a class="hover:text-green-500" href="#">Watch Videos</a>
+            </nav>
+            <div class="space-x-4">
+                <a class="hover:text-green-500" href="#"><i class="fab fa-facebook-f"></i></a>
+                <a class="hover:text-green-500" href="#"><i class="fab fa-twitter"></i></a>
+                <a class="hover:text-green-500" href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+        <p style="align-items: center;">2025 Fries Liberia Music. All Copyrights</p>
+    </footer>
+    <script>
+        const chatbox = document.getElementById('chatbox');
+        const chatForm = document.getElementById('chat-form');
+        const userInput = document.getElementById('user-input');
+
+        const responses = {
+            "hello": "Hi there! How can I assist you today?",
+            "how are you": "I'm just a bot, but I'm here to help you!",
+            "what is your name": "My name is Fries! And you?",
+            "bye": "Goodbye! Have a great day!"
+        };
+
+        chatForm.addEventListener('submit', function(event) {
+            event.preventDefault();
+            const userMessage = userInput.value.trim().toLowerCase();
+            if (userMessage) {
+                addMessageToChatbox('You', userMessage);
+                const botResponse = getBotResponse(userMessage);
+                setTimeout(() => addMessageToChatbox('Chatbot', botResponse), 500);
+                userInput.value = '';
+            }
+        });
+
+        function addMessageToChatbox(sender, message) {
+            const messageElement = document.createElement('div');
+            messageElement.classList.add('text-gray-400');
+            messageElement.textContent = `${sender}: ${message}`;
+            chatbox.appendChild(messageElement);
+            chatbox.scrollTop = chatbox.scrollHeight;
+        }
+
+        function getBotResponse(message) {
+            return responses[message] || "I'm sorry, I don't understand that.";
+        }
+    </script>
+</body>
+</html>

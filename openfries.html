@@ -1,0 +1,58 @@
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Opening Fries</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .loader {
+            border: 16px solid #f3f3f3;
+            border-radius: 50%;
+            border-top: 16px solid #e24000;
+            width: 120px;
+            height: 120px;
+            animation: spin 2s linear infinite;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-white font-roboto">
+    <header class="bg-gray-800 p-4 flex justify-between items-center">
+        <div class="flex items-center space-x-4">
+            <h1 class="text-2xl font-bold">Fries</h1>
+        </div>
+    </header>
+    <main class="flex justify-center items-center h-screen">
+        <div id="loader-container" class="flex flex-col items-center">
+            <div class="loader">Fries</div>
+            <p class="mt-4 text-lg">Opening Fries...</p>
+        </div>
+        <div id="content" class="hidden">
+            <div class="bg-gray-800 p-8 rounded-lg w-full max-w-md">
+                <h2 class="text-3xl font-bold mb-4">Welcome to Fries</h2>
+                <p class="mb-4">Your music journey starts here. Click the button below to register.</p>
+                <a href="register.html" style="color: #e24000;">Register Now</a>
+            </div>
+        </div>
+    </main>
+    <footer class="bg-gray-800 p-4 mt-8">
+        <div class="flex justify-between items-center">
+        </div>
+    </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            setTimeout(function() {
+                document.getElementById('loader-container').classList.add('hidden');
+                document.getElementById('content').classList.remove('hidden');
+            }, 4000); // 4 seconds delay
+        });
+    </script>
+</body>
+</html>

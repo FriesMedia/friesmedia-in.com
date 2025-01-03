@@ -1,0 +1,222 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+Fries Shop
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+  <style>
+   .hidden {
+            display: none;
+        }
+  </style>
+ </head>
+ <body class="bg-gray-100 text-gray-900 font-roboto">
+  <header class="bg-blue-600 p-4 text-white flex justify-between items-center">
+   <h1 class="text-2xl font-bold">
+    Fries8
+   </h1>
+   <nav class="space-x-4">
+    <a class="hover:text-gray-300" href="#">
+     Home
+    </a>
+    <a class="hover:text-gray-300" href="#">
+     Shop
+    </a>
+    <a class="hover:text-gray-300" href="#">
+     Contact
+    </a>
+   </nav>
+   <div class="relative">
+    <button class="relative" id="cart-button">
+     <i class="fas fa-shopping-cart text-2xl">
+     </i>
+     <span class="absolute top-0 right-0 bg-red-600 text-white rounded-full px-2 text-sm" id="cart-count">
+      0
+     </span>
+    </button>
+    <div class="hidden absolute right-0 mt-2 w-64 bg-white shadow-lg rounded-lg p-4" id="cart-dropdown">
+     <h2 class="text-lg font-bold mb-2">
+      Shopping Cart
+     </h2>
+     <ul class="mb-4" id="cart-items">
+     </ul>
+     <button class="bg-green-500 text-white px-4 py-2 rounded-full w-full" id="checkout-button">
+      Checkout
+     </button>
+    </div>
+   </div>
+  </header>
+  <main class="p-4">
+   <section class="mb-8">
+    <h2 class="text-3xl font-bold mb-4">
+     Products
+    </h2>
+    <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
+     <div class="bg-white p-4 rounded-lg shadow-md">
+      <img alt="Product image placeholder" class="w-full h-48 object-cover rounded-lg mb-4" height="300" src="https://storage.googleapis.com/a1aa/image/KfwYLoVWftoLHkBfiFEeq9x4VeIZfHNxcus6OjpSLt2g9HwfJA.jpg" width="300"/>
+      <h3 class="text-lg font-semibold">
+       Product 1
+      </h3>
+      <p class="text-gray-600">
+       $10.00
+      </p>
+      <button class="add-to-cart bg-blue-500 text-white px-4 py-2 rounded-full mt-2" data-id="1" data-name="Product 1" data-price="10.00">
+       Add to Cart
+      </button>
+     </div>
+     <div class="bg-white p-4 rounded-lg shadow-md">
+      <img alt="Product image placeholder" class="w-full h-48 object-cover rounded-lg mb-4" height="300" src="https://storage.googleapis.com/a1aa/image/KfwYLoVWftoLHkBfiFEeq9x4VeIZfHNxcus6OjpSLt2g9HwfJA.jpg" width="300"/>
+      <h3 class="text-lg font-semibold">
+       Product 2
+      </h3>
+      <p class="text-gray-600">
+       $20.00
+      </p>
+      <button class="add-to-cart bg-blue-500 text-white px-4 py-2 rounded-full mt-2" data-id="2" data-name="Product 2" data-price="20.00">
+       Add to Cart
+      </button>
+     </div>
+     <div class="bg-white p-4 rounded-lg shadow-md">
+      <img alt="Product image placeholder" class="w-full h-48 object-cover rounded-lg mb-4" height="300" src="https://storage.googleapis.com/a1aa/image/KfwYLoVWftoLHkBfiFEeq9x4VeIZfHNxcus6OjpSLt2g9HwfJA.jpg" width="300"/>
+      <h3 class="text-lg font-semibold">
+       Product 3
+      </h3>
+      <p class="text-gray-600">
+       $30.00
+      </p>
+      <button class="add-to-cart bg-blue-500 text-white px-4 py-2 rounded-full mt-2" data-id="3" data-name="Product 3" data-price="30.00">
+       Add to Cart
+      </button>
+     </div>
+     <div class="bg-white p-4 rounded-lg shadow-md">
+      <img alt="Product image placeholder" class="w-full h-48 object-cover rounded-lg mb-4" height="300" src="https://storage.googleapis.com/a1aa/image/KfwYLoVWftoLHkBfiFEeq9x4VeIZfHNxcus6OjpSLt2g9HwfJA.jpg" width="300"/>
+      <h3 class="text-lg font-semibold">
+       Product 4
+      </h3>
+      <p class="text-gray-600">
+       $40.00
+      </p>
+      <button class="add-to-cart bg-blue-500 text-white px-4 py-2 rounded-full mt-2" data-id="4" data-name="Product 4" data-price="40.00">
+       Add to Cart
+      </button>
+     </div>
+     <div class="bg-white p-4 rounded-lg shadow-md">
+      <img alt="Product image placeholder" class="w-full h-48 object-cover rounded-lg mb-4" height="300" src="https://storage.googleapis.com/a1aa/image/KfwYLoVWftoLHkBfiFEeq9x4VeIZfHNxcus6OjpSLt2g9HwfJA.jpg" width="300"/>
+      <h3 class="text-lg font-semibold">
+       Product 5
+      </h3>
+      <p class="text-gray-600">
+       $50.00
+      </p>
+      <button class="add-to-cart bg-blue-500 text-white px-4 py-2 rounded-full mt-2" data-id="5" data-name="Product 5" data-price="50.00">
+       Add to Cart
+      </button>
+     </div>
+     <div class="bg-white p-4 rounded-lg shadow-md">
+      <img alt="Product image placeholder" class="w-full h-48 object-cover rounded-lg mb-4" height="300" src="https://storage.googleapis.com/a1aa/image/KfwYLoVWftoLHkBfiFEeq9x4VeIZfHNxcus6OjpSLt2g9HwfJA.jpg" width="300"/>
+      <h3 class="text-lg font-semibold">
+       Product 6
+      </h3>
+      <p class="text-gray-600">
+       $60.00
+      </p>
+      <button class="add-to-cart bg-blue-500 text-white px-4 py-2 rounded-full mt-2" data-id="6" data-name="Product 6" data-price="60.00">
+       Add to Cart
+      </button>
+     </div>
+    </div>
+   </section>
+  </main>
+  <footer class="bg-blue-600 p-4 text-white mt-8">
+   <div class="flex justify-between items-center">
+    <p>
+     © 2025 Fries Liberia music
+    </p>
+    <nav class="space-x-4">
+     <a class="hover:text-gray-300" href="#">
+      About
+     </a>
+     <a class="hover:text-gray-300" href="#">
+      Contact
+     </a>
+     <a class="hover:text-gray-300" href="#">
+      Privacy
+     </a>
+    </nav>
+   </div>
+  </footer>
+  <script>
+   const cartButton = document.getElementById('cart-button');
+        const cartDropdown = document.getElementById('cart-dropdown');
+        const cartItems = document.getElementById('cart-items');
+        const cartCount = document.getElementById('cart-count');
+        const checkoutButton = document.getElementById('checkout-button');
+        let cart = [];
+
+        cartButton.addEventListener('click', () => {
+            cartDropdown.classList.toggle('hidden');
+        });
+
+        document.querySelectorAll('.add-to-cart').forEach(button => {
+            button.addEventListener('click', () => {
+                const id = button.getAttribute('data-id');
+                const name = button.getAttribute('data-name');
+                const price = button.getAttribute('data-price');
+                addToCart(id, name, price);
+            });
+        });
+
+        function addToCart(id, name, price) {
+            const existingItem = cart.find(item => item.id === id);
+            if (existingItem) {
+                existingItem.quantity += 1;
+            } else {
+                cart.push({ id, name, price, quantity: 1 });
+            }
+            updateCart();
+        }
+
+        function updateCart() {
+            cartItems.innerHTML = '';
+            cart.forEach(item => {
+                const li = document.createElement('li');
+                li.classList.add('flex', 'justify-between', 'items-center', 'mb-2');
+                li.innerHTML = `
+                    <span>${item.name} x${item.quantity}</span>
+                    <span>$${(item.price * item.quantity).toFixed(2)}</span>
+                    <button class="remove-from-cart text-red-600" data-id="${item.id}"><i class="fas fa-trash"></i></button>
+                `;
+                cartItems.appendChild(li);
+            });
+            cartCount.textContent = cart.length;
+            document.querySelectorAll('.remove-from-cart').forEach(button => {
+                button.addEventListener('click', () => {
+                    const id = button.getAttribute('data-id');
+                    removeFromCart(id);
+                });
+            });
+        }
+
+        function removeFromCart(id) {
+            cart = cart.filter(item => item.id !== id);
+            updateCart();
+        }
+
+        checkoutButton.addEventListener('click', () => {
+            if (cart.length > 0) {
+                alert('Order placed successfully!');
+                cart = [];
+                updateCart();
+                cartDropdown.classList.add('hidden');
+            } else {
+                alert('Your cart is empty.');
+            }
+        });
+  </script>
+ </body>
+</html>

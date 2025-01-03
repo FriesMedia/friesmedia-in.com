@@ -1,0 +1,73 @@
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Register - Friesplay</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-900 text-white font-roboto">
+    <header class="bg-gray-800 p-4 flex justify-between items-center">
+        <div class="flex items-center space-x-4">
+        </div>
+    </header>
+    <main class="flex justify-center items-center h-screen">
+        <div class="bg-gray-800 p-8 rounded-lg w-full max-w-md">
+            <h2 class="text-3xl font-bold mb-4">Register With Fries</h2>
+            <form id="register-form">
+                <div class="mb-4">
+                    <label class="block text-gray-400 mb-2" for="email">Email</label>
+                    <input class="w-full p-2 rounded-lg bg-gray-700 text-white" id="email" name="email" type="email" required/>
+                </div>
+                <div class="mb-4 flex justify-between items-center">
+                    <a href="mailtoweb.html" style="color: red;">Register</a>
+                    <div class="flex space-x-4">
+                        <br>
+                        <p>Login here if you are member.</p> 
+                        <a href="login.html" style="color: lawngreen;">Login</a>
+                        <button id="fingerprint-button" class="text-2xl" >
+                            <i class="fas fa-fingerprint"></i>
+                        </button>
+                        <button id="face-scan-button" class="text-2xl">
+                            <i class="fas fa-user-circle"></i>
+                        </button>
+                
+                    </div>
+                </div>
+            </form>
+        </div>
+    </main>
+    <footer class="bg-gray-800 p-4 mt-8">
+        <div class="flex justify-between items-center">
+            <div class="flex items-center space-x-4">
+                <img alt="Spotify logo placeholder" class="w-10 h-10" height="50" src="images/Screenshot (179).png" width="50"/>
+                <h1 class="text-2xl font-bold">Friesplay</h1>
+            </div>
+            <div class="space-x-4">
+                <a class="hover:text-green-500" href="#"><i class="fab fa-facebook-f"></i></a>
+                <a class="hover:text-green-500" href="#"><i class="fab fa-twitter"></i></a>
+                <a class="hover:text-green-500" href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+        <p style="align-items: center;">2025 Fries Liberia Music. All Copyrights</p>
+    </footer>
+    <script>
+        document.getElementById('fingerprint-button').addEventListener('click', function(event) {
+            event.preventDefault();
+            alert('Fingerprint authentication is not supported in this version.');
+        });
+
+        document.getElementById('face-scan-button').addEventListener('click', function(event) {
+            event.preventDefault();
+            alert('Face scan authentication is not supported in this version.');
+        });
+
+        document.getElementById('register-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            alert('Registration form submitted.');
+        });
+    </script>
+</body>
+</html>

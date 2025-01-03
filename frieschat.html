@@ -1,0 +1,88 @@
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>FriesChat</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet"/>
+    <style>
+        .chat-bubble {
+            max-width: 70%;
+            padding: 10px;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+        .chat-bubble.sent {
+            background-color: #DCF8C6;
+            align-self: flex-end;
+        }
+        .chat-bubble.received {
+            background-color: #FFFFFF;
+            align-self: flex-start;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-900 font-roboto">
+    <header class="bg-green-600 p-4 text-white flex justify-between items-center">
+        <div class="flex items-center space-x-4">
+
+            <h1 class="text-2xl font-bold">FriesChat</h1>
+        </div>
+        <nav class="space-x-4">
+            <a class="hover:text-gray-300" href="frieschat.html">Home</a>
+            <a class="hover:text-gray-300" href="#">Profile</a>
+            <a class="hover:text-gray-300" href="#">Settings</a>
+        </nav>
+    </header>
+    <main class="flex flex-col h-screen">
+        <div id="chat-container" class="flex-1 p-4 overflow-y-auto bg-gray-200">
+            <div class="chat-bubble received">
+                Hello! How are you?
+            </div>
+            <div class="chat-bubble sent">
+                I'm good, thank you! How about you?
+            </div>
+        </div>
+        <div class="bg-gray-300 p-4 flex items-center">
+            <input id="chat-input" class="flex-1 p-2 rounded-lg bg-white" placeholder="Type a message..." type="text"/>
+            <button id="send-button" class="bg-green-600 text-white px-4 py-2 rounded-full ml-2">
+                <i class="fas fa-paper-plane"></i>
+            </button>
+        </div>
+    </main>
+    <footer class="bg-green-600 p-4 text-white mt-8">
+        <div class="flex justify-between items-center">
+            <p>© 2025 Fries Liberia Media</p>
+            <nav class="space-x-4">
+                <a class="hover:text-gray-300" href="#">About</a>
+                <a class="hover:text-gray-300" href="#">Contact</a>
+                <a class="hover:text-gray-300" href="#">Privacy</a>
+            </nav>
+        </div>
+    </footer>
+    <script>
+        const chatContainer = document.getElementById('chat-container');
+        const chatInput = document.getElementById('chat-input');
+        const sendButton = document.getElementById('send-button');
+
+        sendButton.addEventListener('click', () => {
+            const message = chatInput.value.trim();
+            if (message) {
+                addMessageToChat('sent', message);
+                chatInput.value = '';
+                // Simulate a received message
+                setTimeout(() => addMessageToChat('received', 'This is a reply!'), 1000);
+            }
+        });
+
+        function addMessageToChat(type, message) {
+            const messageElement = document.createElement('div');
+            messageElement.classList.add('chat-bubble', type);
+            messageElement.textContent = message;
+            chatContainer.appendChild(messageElement);
+            chatContainer.scrollTop = chatContainer.scrollHeight;
+        }
+    </script>
+</body>
+</html>

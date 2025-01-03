@@ -1,0 +1,84 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FriesFind</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <!-- Navigation Bar -->
+    <nav class="bg-white shadow-md">
+        <div class="container mx-auto px-4 py-2 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-gray-800">Fries Check</a>
+            <div class="flex items-center space-x-4">
+                <a href="#" class="text-gray-600 hover:text-gray-800"><i class="fas fa-home"></i></a>
+                <a href="#" class="text-gray-600 hover:text-gray-800"><i class="fas fa-info-circle"></i></a>
+                <a href="#" class="text-gray-600 hover:text-gray-800"><i class="fas fa-cog"></i></a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container mx-auto px-4 py-6">
+        <!-- Search Section -->
+        <div class="bg-white shadow-md rounded-lg p-6 mb-6">
+            <h1 class="text-3xl font-bold text-gray-800 mb-4">Search the Internet</h1>
+            <div class="flex">
+                <input type="text" id="searchInput" class="w-full p-2 border border-gray-300 rounded-l-lg" placeholder="Enter search term...">
+                <button onclick="performSearch()" class="bg-blue-500 text-white p-2 rounded-r-lg"><i class="fas fa-search"></i></button>
+            </div>
+        </div>
+
+        <!-- Results Section -->
+        <div id="results" class="bg-white shadow-md rounded-lg p-6">
+            <h2 class="text-2xl font-bold text-gray-800 mb-4">Search Results</h2>
+            <div id="resultsContainer" class="space-y-4">
+                <!-- Search results will be appended here -->
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function performSearch() {
+            const searchTerm = document.getElementById('searchInput').value;
+            const resultsContainer = document.getElementById('resultsContainer');
+            resultsContainer.innerHTML = ''; // Clear previous results
+
+            // Simulate search results
+            const results = [
+                { title: 'Result 1', description: 'Description for result 1', link: '#' },
+                { title: 'Result 2', description: 'Description for result 2', link: '#' },
+                { title: 'Result 3', description: 'Description for result 3', link: '#' },
+                { title: 'Result 4', description: 'Description for result 4', link: '#' },
+                { title: 'Result 5', description: 'Description for result 5', link: '#' }
+            ];
+
+            results.forEach(result => {
+                const resultItem = document.createElement('div');
+                resultItem.classList.add('p-4', 'border', 'border-gray-300', 'rounded-lg');
+
+                const resultTitle = document.createElement('a');
+                resultTitle.href = result.link;
+                resultTitle.classList.add('text-xl', 'font-bold', 'text-blue-500', 'hover:underline');
+                resultTitle.textContent = result.title;
+
+                const resultDescription = document.createElement('p');
+                resultDescription.classList.add('text-gray-600');
+                resultDescription.textContent = result.description;
+
+                resultItem.appendChild(resultTitle);
+                resultItem.appendChild(resultDescription);
+
+                resultsContainer.appendChild(resultItem);
+            });
+        }
+    </script>
+</body>
+</html>

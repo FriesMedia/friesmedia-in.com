@@ -1,0 +1,87 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Settings - Friesmedia
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body {
+            font-family: 'Roboto', sans-serif;
+        }
+  </style>
+ </head>
+ <body class="bg-gray-100 text-gray-800">
+  <!-- Header -->
+  <header class="flex items-center justify-between p-4 bg-white shadow-md fixed w-full z-10">
+   <div class="flex items-center space-x-4">
+    <img alt="Instagram logo with a camera icon" class="h-8" height="50" src="https://storage.googleapis.com/a1aa/image/10qa5AkB8WqQG5J6Co5Boptpes5bYWOfzqjDuJMtCZnuXSBUA.jpg" width="100"/>
+    <h1 class="text-xl font-bold">
+     Settings
+    </h1>
+   </div>
+   <div class="flex items-center space-x-4">
+    <i class="fas fa-search hover:text-gray-600 cursor-pointer">
+    </i>
+    <i class="fas fa-bell hover:text-gray-600 cursor-pointer">
+    </i>
+    <img alt="User avatar placeholder image" class="h-8 w-8 rounded-full" height="32" src="https://storage.googleapis.com/a1aa/image/sRjav6v4ZJqnH99qbhZxIZ2Dyk1zfzYxH8QopSSfjGlsXSBUA.jpg" width="32"/>
+   </div>
+  </header>
+  <!-- Main Content -->
+  <main class="mt-16 p-4 md:p-8">
+   <div class="max-w-4xl mx-auto bg-white p-6 rounded-md shadow-md">
+    <h2 class="text-2xl font-bold mb-6">
+     Edit Profile
+    </h2>
+    <form>
+     <div class="mb-4">
+      <label class="block text-gray-700 text-sm font-bold mb-2" for="username">
+       Username
+      </label>
+      <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="username" placeholder="Username" type="text"/>
+     </div>
+     <div class="mb-4">
+      <label class="block text-gray-700 text-sm font-bold mb-2" for="email">
+       Email
+      </label>
+      <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="email" placeholder="Email" type="email"/>
+     </div>
+     <div class="mb-4">
+      <label class="block text-gray-700 text-sm font-bold mb-2" for="bio">
+       Bio
+      </label>
+      <textarea class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="bio" placeholder="Bio"></textarea>
+     </div>
+     <div class="mb-4">
+      <label class="block text-gray-700 text-sm font-bold mb-2" for="profile-picture">
+       Profile Picture
+      </label>
+      <div class="flex items-center">
+       <img alt="Current profile picture placeholder" class="h-16 w-16 rounded-full mr-4" height="100" src="https://storage.googleapis.com/a1aa/image/VLzcrC0FBFLcIx5IQ0BOGXTO1pdfTS5cOePK70ZEr9fUvkCoA.jpg" width="100"/>
+       <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="profile-picture" type="file"/>
+      </div>
+     </div>
+     <div class="flex items-center justify-between">
+      <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button">
+       Save Changes
+      </button>
+      <button class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button">
+       Cancel
+      </button>
+     </div>
+    </form>
+   </div>
+  </main>
+  <!-- Footer -->
+  <footer class="mt-16 py-8 bg-white text-center shadow-md">
+   <p class="text-gray-500">
+    © 2025 Fries Liberia Music. All rights reserved.
+   </p>
+  </footer>
+ </body>
+</html>

@@ -1,0 +1,211 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FriesTech</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <!-- Navigation Bar -->
+    <nav class="bg-white shadow-md">
+        <div class="container mx-auto px-4 py-2 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-gray-800">FriesBot</a>
+            <div class="flex items-center space-x-4">
+                <a href="frieslib.html" class="text-gray-600 hover:text-gray-800"><i class="fas fa-home"></i></a>
+                <a href="adva.html" class="text-gray-600 hover:text-gray-800"><i class="fas fa-info-circle"></i></a>
+                <a href="setting.html" class="text-gray-600 hover:text-gray-800"><i class="fas fa-cog"></i></a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container mx-auto px-4 py-6">
+        <!-- Chat Section -->
+        <div class="bg-white shadow-md rounded-lg p-6 mb-6">
+            <h1 class="text-3xl font-bold text-gray-800 mb-4">Friestech</h1>
+            <div class="flex flex-col space-y-4">
+                <div id="chatBox" class="bg-gray-100 p-4 rounded-lg h-64 overflow-y-auto">
+                    <!-- Chat messages will be appended here -->
+                </div>
+                <button onclick="startListening()" class="bg-blue-500 text-white p-2 rounded-lg">
+                    <i class="fas fa-microphone"></i> Start Talking
+                </button>
+            </div>
+        </div>
+    </div>
+<br>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Location App
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body {
+            font-family: 'Roboto', sans-serif;
+        }
+  </style>
+ </head>
+ <body class="bg-gray-100">
+  <header class="bg-blue-600 text-white p-4">
+   <div class="container mx-auto flex justify-between items-center">
+    <h1 class="text-2xl font-bold">
+     Location App
+    </h1>
+    <nav>
+     <ul class="flex space-x-4">
+      <li>
+       <a class="hover:underline" href="#">
+        Home
+       </a>
+      </li>
+      <li>
+       <a class="hover:underline" href="#">
+        About
+       </a>
+      </li>
+      <li>
+       <a class="hover:underline" href="#">
+        Contact
+       </a>
+      </li>
+     </ul>
+    </nav>
+   </div>
+  </header>
+  <br>
+  <h2>
+    Are you lost? With FriesFind we help our user with the world map to find whatsoever that is missing and it's need to be find on the internet.  !!!!COMING SOON!!!!
+    
+</h2>
+  <main class="container mx-auto p-4">
+   <section class="mb-8">
+    <h2 class="text-xl font-bold mb-4">
+     Find Your Location
+    </h2>
+    <div class="flex flex-col md:flex-row md:space-x-4">
+     <div class="flex-1 mb-4 md:mb-0">
+      <input class="w-full p-2 border border-gray-300 rounded" id="location-input" placeholder="Enter a location" type="text"/>
+     </div>
+     <button class="bg-blue-600 text-white p-2 rounded" id="search-btn">
+      Search
+     </button>
+    </div>
+   </section>
+   <section>
+    <h2 class="text-xl font-bold mb-4">
+     Map
+    </h2>
+    <div class="w-full h-96 bg-gray-300" id="map">
+     <img alt="Placeholder image of a map showing various locations with markers" class="w-full h-full object-cover" height="600" src="https://storage.googleapis.com/a1aa/image/HfbZjwfn5ijPwktBzY2R2OUseVdqjPmrPGi4VOi47NInIjCoA.jpg" width="800"/>
+    </div>
+   </section>
+  </main>
+  <footer class="bg-blue-600 text-white p-4 mt-8">
+   <div class="container mx-auto text-center">
+    <p>
+     © 2025 FriesFind. All rights reserved.
+    </p>
+   </div>
+  </footer>
+  <script>
+   // Initialize and add the map
+        function initMap() {
+            // The location of the initial center point
+            const initialLocation = { lat: -34.397, lng: 150.644 };
+            // The map, centered at the initial location
+            const map = new google.maps.Map(document.getElementById("map"), {
+                zoom: 8,
+                center: initialLocation,
+            });
+            // The marker, positioned at the initial location
+            const marker = new google.maps.Marker({
+                position: initialLocation,
+                map: map,
+            });
+
+            // Search functionality
+            document.getElementById('search-btn').addEventListener('click', function() {
+                const location = document.getElementById('location-input').value;
+                const geocoder = new google.maps.Geocoder();
+                geocoder.geocode({ 'address': location }, function(results, status) {
+                    if (status === 'OK') {
+                        map.setCenter(results[0].geometry.location);
+                        marker.setPosition(results[0].geometry.location);
+                    } else {
+                        alert('Geocode was not successful for the following reason: ' + status);
+                    }
+                });
+            });
+        }
+  </script>
+  <script async="" defer="" src="https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://directionslinkgenerator.com/&ved=2ahUKEwiI77u43NiKAxU7bvUHHfxMGiMQFnoECAoQAQ&usg=AOvVaw3EOAKpWOO3_uHjeZcXjAgP">
+  </script>
+ </body>
+</html>
+
+    <script>
+        const chatBox = document.getElementById('chatBox');
+
+        function appendMessage(sender, message) {
+            const messageElement = document.createElement('div');
+            messageElement.classList.add('p-2', 'rounded-lg', 'mb-2', sender === 'user' ? 'bg-blue-100' : 'bg-green-100');
+            messageElement.textContent = message;
+            chatBox.appendChild(messageElement);
+            chatBox.scrollTop = chatBox.scrollHeight;
+        }
+
+        function startListening() {
+            const recognition = new (window.SpeechRecognition || window.webkitSpeechRecognition)();
+            recognition.lang = 'en-US';
+            recognition.interimResults = false;
+            recognition.maxAlternatives = 1;
+
+            recognition.start();
+
+            recognition.onresult = (event) => {
+                const userMessage = event.results[0][0].transcript;
+                appendMessage('user', userMessage);
+                respondToMessage(userMessage);
+            };
+
+            recognition.onerror = (event) => {
+                console.error('Speech recognition error', event);
+            };
+        }
+
+        function respondToMessage(message) {
+            let response = "I didn't understand that.";
+
+            if (message.toLowerCase().includes('hello')) {
+                response = 'Hello! How can I help you today?';
+            } else if (message.toLowerCase().includes('how are you')) {
+                response = 'I am just a bot, but I am doing great! How about you?';
+            } else if (message.toLowerCase().includes('what is your name')) {
+                response = 'I am VoiceBot, your virtual assistant.';
+            }
+
+            appendMessage('bot', response);
+            speak(response);
+        }
+
+        function speak(text) {
+            const utterance = new SpeechSynthesisUtterance(text);
+            utterance.lang = 'en-US';
+            window.speechSynthesis.speak(utterance);
+        }
+    </script>
+</body>
+</html>

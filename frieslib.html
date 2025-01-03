@@ -1,0 +1,1358 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   FriesMedia
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+  <style>
+   .like-button.liked {
+            color: red;
+        }
+  </style>
+  <script src="https://cdn.tailwindcss.com">
+</script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com">
+</script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<style>
+ body {
+          font-family: 'Roboto', sans-serif;
+      }
+</style>
+ </head>
+ <body class="bg-gray-100 text-gray-900 font-roboto">
+  <header class="bg-blue-600 p-4 text-white flex justify-between items-center">
+   <h1 class="text-2xl font-bold">
+    FriesMedia
+   </h1>
+   <nav class="space-x-4">
+    <a class="hover:text-gray-300" href="friestech.html">
+     Friestech
+    </a>
+    <a class="hover:text-gray-300" href="friesplay.html">
+        FriesPlay
+    </a>
+    <a class="hover:text-gray-300" href="friestv.html">
+        FriesTv
+    </a>
+    <a class="hover:text-gray-300" href="friesai.html">
+        FriesAi
+    </a>
+    <a class="hover:text-gray-300" href="friesgame.html">
+        FriesGame
+    </a>
+    <a class="hover:text-gray-300" href="friesmula.html">
+        FriesMula
+    </a>
+    <a class="hover:text-gray-300" href="friesshop.html">
+        Fries8
+    </a>
+    <a class="hover:text-gray-300" href="frieschat.html">
+     Chat
+    </a>
+   </nav>
+   <nav class="bg-white shadow-md">
+    <div class="container mx-auto px-4 py-2 flex justify-between items-center">
+    
+     <div class="flex items-center space-x-4">
+      <a class="text-gray-600 hover:text-gray-800" href="frieslib.html">
+       <i class="fas fa-home">
+       </i>
+      </a>
+      <a class="text-gray-600 hover:text-gray-800" href="friesfind.html">
+       <i class="fas fa-search">
+       </i>
+      </a>
+      <a class="text-gray-600 hover:text-gray-800" href="friespro.html">
+       <i class="fas fa-user">
+       </i>
+      </a>
+      <a class="text-gray-600 hover:text-gray-800" href="myfries.html">
+        <i class="fas fa-heart">
+        </i>
+       </a>
+      <a class="text-gray-600 hover:text-gray-800" href="notify.html">
+       <i class="fas fa-bell">
+       </i>
+      </a>
+      <a class="text-gray-600 hover:text-gray-800" href="setting.html">
+       <i class="fas fa-cog">
+       </i>
+      </a>
+     </div>
+    </div>
+   </nav>
+  </header>
+  
+   
+  <main class="p-4" style="align-items: center;">
+    Upload FriesReel
+    <a class="text-gray-600 hover:text-gray-800" href="myfries.html">
+        <i class="fas fa-plus-square">
+        </i>
+       </a>
+    <section class="mb-8">
+       
+   <div class="container mx-auto px-4 py-6">
+    <div class="bg-white shadow-md rounded-lg p-6 mb-6">
+     <h1 class="text-3xl font-bold text-gray-800 mb-4">
+      Upload Anything!
+     </h1>
+     <br>
+     <h1>My Fries</h1>
+     </header>
+     <main>
+         <section id="upload-section">
+             <input type="file" id="video-upload" accept="video/*">
+             <button id="upload-button" style="color: green;">Upload Video</button>
+         </section>
+         <section id="video-feed">
+             <h2 style="color: #ff0050;">Video Feed</h2>
+             <div id="videos"></div>
+         </section>
+     </main>
+     <br>
+         <section class="mt-8 px-4 md:px-8">
+             <h2 class="text-2xl md:text-3xl font-bold mb-4">Popular on Frieslift</h2>
+             <div class="flex space-x-4 overflow-x-scroll scrollbar-hide">
+                 <img src="https://placehold.co/300x200?text=Show+1&bg=000&fc=fff" alt="Show 1 placeholder image" class="w-64 h-40 object-cover rounded-md">
+                 <img src="https://placehold.co/300x200?text=Show+2&bg=000&fc=fff" alt="Show 2 placeholder image" class="w-64 h-40 object-cover rounded-md">
+                 <img src="https://placehold.co/300x200?text=Show+3&bg=000&fc=fff" alt="Show 3 placeholder image" class="w-64 h-40 object-cover rounded-md">
+                 <img src="https://placehold.co/300x200?text=Show+4&bg=000&fc=fff" alt="Show 4 placeholder image" class="w-64 h-40 object-cover rounded-md">
+                 <img src="https://placehold.co/300x200?text=Show+5&bg=000&fc=fff" alt="Show 5 placeholder image" class="w-64 h-40 object-cover rounded-md">
+             </div>
+         </section>
+     
+         <section class="mt-8 px-4 md:px-8">
+             <h2 class="text-2xl md:text-3xl font-bold mb-4">New Releases</h2>
+             <div class="flex space-x-4 overflow-x-scroll scrollbar-hide">
+                 <img src="https://placehold.co/300x200?text=New+1&bg=000&fc=fff" alt="New release 1 placeholder image" class="w-64 h-40 object-cover rounded-md">
+                 <img src="https://placehold.co/300x200?text=New+2&bg=000&fc=fff" alt="New release 2 placeholder image" class="w-64 h-40 object-cover rounded-md">
+                 <img src="https://placehold.co/300x200?text=New+3&bg=000&fc=fff" alt="New release 3 placeholder image" class="w-64 h-40 object-cover rounded-md">
+                 <img src="https://placehold.co/300x200?text=New+4&bg=000&fc=fff" alt="New release 4 placeholder image" class="w-64 h-40 object-cover rounded-md">
+                 <img src="https://placehold.co/300x200?text=New+5&bg=000&fc=fff" alt="New release 5 placeholder image" class="w-64 h-40 object-cover rounded-md">
+             </div>
+         </section>
+     
+     </div>
+    </div>
+   </div>
+  
+       <br>
+       <!-- Main Content -->
+  <div class="container mx-auto px-4 py-6 flex flex-col md:flex-row">
+    <!-- Feed Section -->
+    <div class="w-full md:w-2/3 md:pr-4">
+     <!-- Post 1 -->
+     <div class="bg-white shadow-md rounded-lg mb-4">
+      <div class="p-4 flex items-center">
+       <img alt="Profile picture of user 1" class="w-10 h-10 rounded-full" height="50" src="https://storage.googleapis.com/a1aa/image/oVTVrmq7afywSC5GL2cq1ZxsTeOogKd83lflxsMsbWfZEDFQB.jpg" width="50"/>
+       <div class="ml-3">
+        <p class="text-gray-800 font-semibold">
+         User 1
+        </p>
+        <p class="text-gray-600 text-sm">
+         2 hours ago
+        </p>
+       </div>
+      </div>
+      <img alt="Post image showing a beautiful landscape" class="w-full" height="400" src="https://storage.googleapis.com/a1aa/image/j12I3mZEyNbhDB4LBLfaiebnNYSFh2pRGSNKNTekDdoRihCoA.jpg" width="600"/>
+      <div class="p-4">
+       <div class="flex items-center justify-between">
+        <div class="flex items-center space-x-4">
+         <a class="text-gray-600 hover:text-gray-800" href="#">
+          <i class="fas fa-heart">
+          </i>
+         </a>
+         <a class="text-gray-600 hover:text-gray-800" href="#">
+          <i class="fas fa-comment">
+          </i>
+         </a>
+         <a class="text-gray-600 hover:text-gray-800" href="#">
+          <i class="fas fa-share">
+          </i>
+         </a>
+        </div>
+        <a class="text-gray-600 hover:text-gray-800" href="#">
+         <i class="fas fa-bookmark">
+         </i>
+        </a>
+       </div>
+       <p class="mt-2 text-gray-800">
+        This is a beautiful landscape!
+       </p>
+      </div>
+     </div>
+     <!-- Add more posts as needed -->
+    </div>
+    <!-- Profile Section -->
+    <div class="w-full md:w-1/3">
+     <div class="bg-white shadow-md rounded-lg p-4">
+      <div class="flex items-center">
+       <img alt="Profile picture of the logged-in user" class="w-20 h-20 rounded-full" height="100" src="https://storage.googleapis.com/a1aa/image/TAWUHJnvEW7IMlOWCJKDKEinPMoID3YElCIf1Kiq4Y2iYoAKA.jpg" width="100"/>
+       <div class="ml-4">
+        <p class="text-gray-800 font-semibold">
+         Logged-in User
+        </p>
+        <p class="text-gray-600">
+         loggedinuser@example.com
+        </p>
+       </div>
+      </div>
+      <div class="mt-4">
+       <p class="text-gray-800 font-semibold">
+        Bio:
+       </p>
+       <p class="text-gray-600">
+        This is the bio of the logged-in user. It can be a short description about the user.
+       </p>
+      </div>
+      <div class="mt-4">
+       <p class="text-gray-800 font-semibold">
+        Connectors: 120
+       </p>
+       <p class="text-gray-800 font-semibold">
+        Connecting: 180
+       </p>
+      </div>
+      <div class="mt-4">
+       <button class="w-full bg-blue-500 text-white py-2 rounded-lg">
+        Edit Profile
+       </button>
+      </div>
+     </div>
+    </div>
+   </div>
+   
+    <h2 class="text-3xl font-bold mb-4">
+     Posts
+    </h2>
+    <div class="bg-white p-4 rounded-lg shadow-md mb-4">
+     <div class="flex items-center mb-4">
+      <img alt="User profile picture" class="w-12 h-12 rounded-full mr-4" height="50" src="https://storage.googleapis.com/a1aa/image/eOMZdZJRtrRkSyZeFzjpjxALZqJTMo9JfHwPqaDebj9UoA8PB.jpg" width="50"/>
+      <div>
+       <h3 class="text-lg font-semibold">
+        FrieMedia Officail
+       </h3>
+       <button class="follow-button bg-blue-500 text-white px-2 py-1 rounded-full">
+        Follow
+       </button>
+      </div>
+     </div>
+     <p class="mb-4">
+      Hi world! My name is Fries
+     </p>
+     <div class="flex items-center space-x-4">
+      <button class="like-button text-gray-600">
+       <i class="fas fa-heart">
+       </i>
+       Like
+      </button>
+      <button class="comment-button text-gray-600">
+       <i class="fas fa-comment">
+       </i>
+       Comment
+      </button>
+      <button class="share-button text-gray-600">
+       <i class="fas fa-share">
+       </i>
+       Share
+      </button>
+     </div>
+     <div class="comments mt-4 hidden">
+      <div class="mb-2">
+       <strong>
+        User 2:
+       </strong>
+       Great post!
+      </div>
+      <form class="comment-form flex">
+       <input class="w-full p-2 rounded-lg bg-gray-200" placeholder="Add a comment..." type="text"/>
+       <button class="bg-blue-500 text-white px-4 py-2 rounded-full ml-2" type="submit">
+        Post
+       </button>
+      </form>
+     </div>
+    </div>
+    <br>
+    <div class="bg-white p-4 rounded-lg shadow-md mb-4">
+        <div class="flex items-center mb-4">
+         <img alt="User profile picture" class="w-12 h-12 rounded-full mr-4" height="50" src="https://storage.googleapis.com/a1aa/image/eOMZdZJRtrRkSyZeFzjpjxALZqJTMo9JfHwPqaDebj9UoA8PB.jpg" width="50"/>
+         <div>
+          <h3 class="text-lg font-semibold">
+           FrieMedia Officail
+          </h3>
+          <button class="follow-button bg-blue-500 text-white px-2 py-1 rounded-full">
+           Follow
+          </button>
+         </div>
+        </div>
+        <p class="mb-4">
+         Hi world! My name is Fries
+        </p>
+        <div class="flex items-center space-x-4">
+         <button class="like-button text-gray-600">
+          <i class="fas fa-heart">
+          </i>
+          Like
+         </button>
+         <button class="comment-button text-gray-600">
+          <i class="fas fa-comment">
+          </i>
+          Comment
+         </button>
+         <button class="share-button text-gray-600">
+          <i class="fas fa-share">
+          </i>
+          Share
+         </button>
+        </div>
+        <div class="comments mt-4 hidden">
+         <div class="mb-2">
+          <strong>
+           User 2:
+          </strong>
+          Great post!
+         </div>
+         <form class="comment-form flex">
+          <input class="w-full p-2 rounded-lg bg-gray-200" placeholder="Add a comment..." type="text"/>
+          <button class="bg-blue-500 text-white px-4 py-2 rounded-full ml-2" type="submit">
+           Post
+          </button>
+         </form>
+        </div>
+       </div>
+       <br>
+       <div class="bg-white p-4 rounded-lg shadow-md mb-4">
+        <div class="flex items-center mb-4">
+         <img alt="User profile picture" class="w-12 h-12 rounded-full mr-4" height="50" src="https://storage.googleapis.com/a1aa/image/eOMZdZJRtrRkSyZeFzjpjxALZqJTMo9JfHwPqaDebj9UoA8PB.jpg" width="50"/>
+         <div>
+          <h3 class="text-lg font-semibold">
+           FrieMedia Officail
+          </h3>
+          <button class="follow-button bg-blue-500 text-white px-2 py-1 rounded-full">
+           Follow
+          </button>
+         </div>
+        </div>
+        <p class="mb-4">
+         Hi world! My name is Fries
+        </p>
+        <div class="flex items-center space-x-4">
+         <button class="like-button text-gray-600">
+          <i class="fas fa-heart">
+          </i>
+          Like
+         </button>
+         <button class="comment-button text-gray-600">
+          <i class="fas fa-comment">
+          </i>
+          Comment
+         </button>
+         <button class="share-button text-gray-600">
+          <i class="fas fa-share">
+          </i>
+          Share
+         </button>
+        </div>
+        <div class="comments mt-4 hidden">
+         <div class="mb-2">
+          <strong>
+           User 2:
+          </strong>
+          Great post!
+         </div>
+         <form class="comment-form flex">
+          <input class="w-full p-2 rounded-lg bg-gray-200" placeholder="Add a comment..." type="text"/>
+          <button class="bg-blue-500 text-white px-4 py-2 rounded-full ml-2" type="submit">
+           Post
+          </button>
+         </form>
+        </div>
+       </div>
+       <br>
+       <div class="bg-white p-4 rounded-lg shadow-md mb-4">
+        <div class="flex items-center mb-4">
+         <img alt="User profile picture" class="w-12 h-12 rounded-full mr-4" height="50" src="https://storage.googleapis.com/a1aa/image/eOMZdZJRtrRkSyZeFzjpjxALZqJTMo9JfHwPqaDebj9UoA8PB.jpg" width="50"/>
+         <div>
+          <h3 class="text-lg font-semibold">
+           FrieMedia Officail
+          </h3>
+          <button class="follow-button bg-blue-500 text-white px-2 py-1 rounded-full">
+           Follow
+          </button>
+         </div>
+        </div>
+        <p class="mb-4">
+         Hi world! My name is Fries
+        </p>
+        <div class="flex items-center space-x-4">
+         <button class="like-button text-gray-600">
+          <i class="fas fa-heart">
+          </i>
+          Like
+         </button>
+         <button class="comment-button text-gray-600">
+          <i class="fas fa-comment">
+          </i>
+          Comment
+         </button>
+         <button class="share-button text-gray-600">
+          <i class="fas fa-share">
+          </i>
+          Share
+         </button>
+        </div>
+        <div class="comments mt-4 hidden">
+         <div class="mb-2">
+          <strong>
+           User 2:
+          </strong>
+          Great post!
+         </div>
+         <form class="comment-form flex">
+          <input class="w-full p-2 rounded-lg bg-gray-200" placeholder="Add a comment..." type="text"/>
+          <button class="bg-blue-500 text-white px-4 py-2 rounded-full ml-2" type="submit">
+           Post
+          </button>
+         </form>
+        </div>
+       </div>
+       <br>
+       <div class="bg-white p-4 rounded-lg shadow-md mb-4">
+        <div class="flex items-center mb-4">
+         <img alt="User profile picture" class="w-12 h-12 rounded-full mr-4" height="50" src="https://storage.googleapis.com/a1aa/image/eOMZdZJRtrRkSyZeFzjpjxALZqJTMo9JfHwPqaDebj9UoA8PB.jpg" width="50"/>
+         <div>
+          <h3 class="text-lg font-semibold">
+           FrieMedia Officail
+          </h3>
+          <button class="follow-button bg-blue-500 text-white px-2 py-1 rounded-full">
+           Follow
+          </button>
+         </div>
+        </div>
+        <p class="mb-4">
+         Hi world! My name is Fries
+        </p>
+        <div class="flex items-center space-x-4">
+         <button class="like-button text-gray-600">
+          <i class="fas fa-heart">
+          </i>
+          Like
+         </button>
+         <button class="comment-button text-gray-600">
+          <i class="fas fa-comment">
+          </i>
+          Comment
+         </button>
+         <button class="share-button text-gray-600">
+          <i class="fas fa-share">
+          </i>
+          Share
+         </button>
+        </div>
+        <div class="comments mt-4 hidden">
+         <div class="mb-2">
+          <strong>
+           User 2:
+          </strong>
+          Great post!
+         </div>
+         <form class="comment-form flex">
+          <input class="w-full p-2 rounded-lg bg-gray-200" placeholder="Add a comment..." type="text"/>
+          <button class="bg-blue-500 text-white px-4 py-2 rounded-full ml-2" type="submit">
+           Post
+          </button>
+         </form>
+        </div>
+       </div>
+       <br>
+       <div class="bg-white p-4 rounded-lg shadow-md mb-4">
+        <div class="flex items-center mb-4">
+         <img alt="User profile picture" class="w-12 h-12 rounded-full mr-4" height="50" src="https://storage.googleapis.com/a1aa/image/eOMZdZJRtrRkSyZeFzjpjxALZqJTMo9JfHwPqaDebj9UoA8PB.jpg" width="50"/>
+         <div>
+          <h3 class="text-lg font-semibold">
+           FrieMedia Officail
+          </h3>
+          <button class="follow-button bg-blue-500 text-white px-2 py-1 rounded-full">
+           Follow
+          </button>
+         </div>
+        </div>
+        <p class="mb-4">
+         Hi world! My name is Fries
+        </p>
+        <div class="flex items-center space-x-4">
+         <button class="like-button text-gray-600">
+          <i class="fas fa-heart">
+          </i>
+          Like
+         </button>
+         <button class="comment-button text-gray-600">
+          <i class="fas fa-comment">
+          </i>
+          Comment
+         </button>
+         <button class="share-button text-gray-600">
+          <i class="fas fa-share">
+          </i>
+          Share
+         </button>
+        </div>
+        <div class="comments mt-4 hidden">
+         <div class="mb-2">
+          <strong>
+           User 2:
+          </strong>
+          Great post!
+         </div>
+         <form class="comment-form flex">
+          <input class="w-full p-2 rounded-lg bg-gray-200" placeholder="Add a comment..." type="text"/>
+          <button class="bg-blue-500 text-white px-4 py-2 rounded-full ml-2" type="submit">
+           Post
+          </button>
+         </form>
+        </div>
+       </div>
+       <br>
+       <div class="bg-white p-4 rounded-lg shadow-md mb-4">
+        <div class="flex items-center mb-4">
+         <img alt="User profile picture" class="w-12 h-12 rounded-full mr-4" height="50" src="https://storage.googleapis.com/a1aa/image/eOMZdZJRtrRkSyZeFzjpjxALZqJTMo9JfHwPqaDebj9UoA8PB.jpg" width="50"/>
+         <div>
+          <h3 class="text-lg font-semibold">
+           FrieMedia Officail
+          </h3>
+          <button class="follow-button bg-blue-500 text-white px-2 py-1 rounded-full">
+           Follow
+          </button>
+         </div>
+        </div>
+        <p class="mb-4">
+         Hi world! My name is Fries
+        </p>
+        <div class="flex items-center space-x-4">
+         <button class="like-button text-gray-600">
+          <i class="fas fa-heart">
+          </i>
+          Like
+         </button>
+         <button class="comment-button text-gray-600">
+          <i class="fas fa-comment">
+          </i>
+          Comment
+         </button>
+         <button class="share-button text-gray-600">
+          <i class="fas fa-share">
+          </i>
+          Share
+         </button>
+        </div>
+        <div class="comments mt-4 hidden">
+         <div class="mb-2">
+          <strong>
+           User 2:
+          </strong>
+          Great post!
+         </div>
+         <form class="comment-form flex">
+          <input class="w-full p-2 rounded-lg bg-gray-200" placeholder="Add a comment..." type="text"/>
+          <button class="bg-blue-500 text-white px-4 py-2 rounded-full ml-2" type="submit">
+           Post
+          </button>
+         </form>
+        </div>
+       </div>
+       <br>
+       <div class="bg-white p-4 rounded-lg shadow-md mb-4">
+        <div class="flex items-center mb-4">
+         <img alt="User profile picture" class="w-12 h-12 rounded-full mr-4" height="50" src="https://storage.googleapis.com/a1aa/image/eOMZdZJRtrRkSyZeFzjpjxALZqJTMo9JfHwPqaDebj9UoA8PB.jpg" width="50"/>
+         <div>
+          <h3 class="text-lg font-semibold">
+           FrieMedia Officail
+          </h3>
+          <button class="follow-button bg-blue-500 text-white px-2 py-1 rounded-full">
+           Follow
+          </button>
+         </div>
+        </div>
+        <p class="mb-4">
+         Hi world! My name is Fries
+        </p>
+        <div class="flex items-center space-x-4">
+         <button class="like-button text-gray-600">
+          <i class="fas fa-heart">
+          </i>
+          Like
+         </button>
+         <button class="comment-button text-gray-600">
+          <i class="fas fa-comment">
+          </i>
+          Comment
+         </button>
+         <button class="share-button text-gray-600">
+          <i class="fas fa-share">
+          </i>
+          Share
+         </button>
+        </div>
+        <div class="comments mt-4 hidden">
+         <div class="mb-2">
+          <strong>
+           User 2:
+          </strong>
+          Great post!
+         </div>
+         <form class="comment-form flex">
+          <input class="w-full p-2 rounded-lg bg-gray-200" placeholder="Add a comment..." type="text"/>
+          <button class="bg-blue-500 text-white px-4 py-2 rounded-full ml-2" type="submit">
+           Post
+          </button>
+         </form>
+        </div>
+       </div>
+       <br>
+       <div class="bg-white p-4 rounded-lg shadow-md mb-4">
+        <div class="flex items-center mb-4">
+         <img alt="User profile picture" class="w-12 h-12 rounded-full mr-4" height="50" src="https://storage.googleapis.com/a1aa/image/eOMZdZJRtrRkSyZeFzjpjxALZqJTMo9JfHwPqaDebj9UoA8PB.jpg" width="50"/>
+         <div>
+          <h3 class="text-lg font-semibold">
+           FrieMedia Officail
+          </h3>
+          <button class="follow-button bg-blue-500 text-white px-2 py-1 rounded-full">
+           Follow
+          </button>
+         </div>
+        </div>
+        <p class="mb-4">
+         Hi world! My name is Fries
+        </p>
+        <div class="flex items-center space-x-4">
+         <button class="like-button text-gray-600">
+          <i class="fas fa-heart">
+          </i>
+          Like
+         </button>
+         <button class="comment-button text-gray-600">
+          <i class="fas fa-comment">
+          </i>
+          Comment
+         </button>
+         <button class="share-button text-gray-600">
+          <i class="fas fa-share">
+          </i>
+          Share
+         </button>
+        </div>
+        <div class="comments mt-4 hidden">
+         <div class="mb-2">
+          <strong>
+           User 2:
+          </strong>
+          Great post!
+         </div>
+         <form class="comment-form flex">
+          <input class="w-full p-2 rounded-lg bg-gray-200" placeholder="Add a comment..." type="text"/>
+          <button class="bg-blue-500 text-white px-4 py-2 rounded-full ml-2" type="submit">
+           Post
+          </button>
+         </form>
+        </div>
+       </div>
+       <br>
+       <div class="bg-white p-4 rounded-lg shadow-md mb-4">
+        <div class="flex items-center mb-4">
+         <img alt="User profile picture" class="w-12 h-12 rounded-full mr-4" height="50" src="https://storage.googleapis.com/a1aa/image/eOMZdZJRtrRkSyZeFzjpjxALZqJTMo9JfHwPqaDebj9UoA8PB.jpg" width="50"/>
+         <div>
+          <h3 class="text-lg font-semibold">
+           FrieMedia Officail
+          </h3>
+          <button class="follow-button bg-blue-500 text-white px-2 py-1 rounded-full">
+           Follow
+          </button>
+         </div>
+        </div>
+        <p class="mb-4">
+         Hi world! My name is Fries
+        </p>
+        <div class="flex items-center space-x-4">
+         <button class="like-button text-gray-600">
+          <i class="fas fa-heart">
+          </i>
+          Like
+         </button>
+         <button class="comment-button text-gray-600">
+          <i class="fas fa-comment">
+          </i>
+          Comment
+         </button>
+         <button class="share-button text-gray-600">
+          <i class="fas fa-share">
+          </i>
+          Share
+         </button>
+        </div>
+        <div class="comments mt-4 hidden">
+         <div class="mb-2">
+          <strong>
+           User 2:
+          </strong>
+          Great post!
+         </div>
+         <form class="comment-form flex">
+          <input class="w-full p-2 rounded-lg bg-gray-200" placeholder="Add a comment..." type="text"/>
+          <button class="bg-blue-500 text-white px-4 py-2 rounded-full ml-2" type="submit">
+           Post
+          </button>
+         </form>
+        </div>
+       </div>
+       <br>
+       <div class="bg-white p-4 rounded-lg shadow-md mb-4">
+        <div class="flex items-center mb-4">
+         <img alt="User profile picture" class="w-12 h-12 rounded-full mr-4" height="50" src="https://storage.googleapis.com/a1aa/image/eOMZdZJRtrRkSyZeFzjpjxALZqJTMo9JfHwPqaDebj9UoA8PB.jpg" width="50"/>
+         <div>
+          <h3 class="text-lg font-semibold">
+           FrieMedia Officail
+          </h3>
+          <button class="follow-button bg-blue-500 text-white px-2 py-1 rounded-full">
+           Follow
+          </button>
+         </div>
+        </div>
+        <p class="mb-4">
+         Hi world! My name is Fries
+        </p>
+        <div class="flex items-center space-x-4">
+         <button class="like-button text-gray-600">
+          <i class="fas fa-heart">
+          </i>
+          Like
+         </button>
+         <button class="comment-button text-gray-600">
+          <i class="fas fa-comment">
+          </i>
+          Comment
+         </button>
+         <button class="share-button text-gray-600">
+          <i class="fas fa-share">
+          </i>
+          Share
+         </button>
+        </div>
+        <div class="comments mt-4 hidden">
+         <div class="mb-2">
+          <strong>
+           User 2:
+          </strong>
+          Great post!
+         </div>
+         <form class="comment-form flex">
+          <input class="w-full p-2 rounded-lg bg-gray-200" placeholder="Add a comment..." type="text"/>
+          <button class="bg-blue-500 text-white px-4 py-2 rounded-full ml-2" type="submit">
+           Post
+          </button>
+         </form>
+        </div>
+       </div>
+       <br>
+       <div class="bg-white p-4 rounded-lg shadow-md mb-4">
+        <div class="flex items-center mb-4">
+         <img alt="User profile picture" class="w-12 h-12 rounded-full mr-4" height="50" src="https://storage.googleapis.com/a1aa/image/eOMZdZJRtrRkSyZeFzjpjxALZqJTMo9JfHwPqaDebj9UoA8PB.jpg" width="50"/>
+         <div>
+          <h3 class="text-lg font-semibold">
+           FrieMedia Officail
+          </h3>
+          <button class="follow-button bg-blue-500 text-white px-2 py-1 rounded-full">
+           Follow
+          </button>
+         </div>
+        </div>
+        <p class="mb-4">
+         Hi world! My name is Fries
+        </p>
+        <div class="flex items-center space-x-4">
+         <button class="like-button text-gray-600">
+          <i class="fas fa-heart">
+          </i>
+          Like
+         </button>
+         <button class="comment-button text-gray-600">
+          <i class="fas fa-comment">
+          </i>
+          Comment
+         </button>
+         <button class="share-button text-gray-600">
+          <i class="fas fa-share">
+          </i>
+          Share
+         </button>
+        </div>
+        <div class="comments mt-4 hidden">
+         <div class="mb-2">
+          <strong>
+           User 2:
+          </strong>
+          Great post!
+         </div>
+         <form class="comment-form flex">
+          <input class="w-full p-2 rounded-lg bg-gray-200" placeholder="Add a comment..." type="text"/>
+          <button class="bg-blue-500 text-white px-4 py-2 rounded-full ml-2" type="submit">
+           Post
+          </button>
+         </form>
+        </div>
+       </div>
+       <br>
+       <div class="bg-white p-4 rounded-lg shadow-md mb-4">
+        <div class="flex items-center mb-4">
+         <img alt="User profile picture" class="w-12 h-12 rounded-full mr-4" height="50" src="https://storage.googleapis.com/a1aa/image/eOMZdZJRtrRkSyZeFzjpjxALZqJTMo9JfHwPqaDebj9UoA8PB.jpg" width="50"/>
+         <div>
+          <h3 class="text-lg font-semibold">
+           FrieMedia Officail
+          </h3>
+          <button class="follow-button bg-blue-500 text-white px-2 py-1 rounded-full">
+           Follow
+          </button>
+         </div>
+        </div>
+        <p class="mb-4">
+         Hi world! My name is Fries
+        </p>
+        <div class="flex items-center space-x-4">
+         <button class="like-button text-gray-600">
+          <i class="fas fa-heart">
+          </i>
+          Like
+         </button>
+         <button class="comment-button text-gray-600">
+          <i class="fas fa-comment">
+          </i>
+          Comment
+         </button>
+         <button class="share-button text-gray-600">
+          <i class="fas fa-share">
+          </i>
+          Share
+         </button>
+        </div>
+        <div class="comments mt-4 hidden">
+         <div class="mb-2">
+          <strong>
+           User 2:
+          </strong>
+          Great post!
+         </div>
+         <form class="comment-form flex">
+          <input class="w-full p-2 rounded-lg bg-gray-200" placeholder="Add a comment..." type="text"/>
+          <button class="bg-blue-500 text-white px-4 py-2 rounded-full ml-2" type="submit">
+           Post
+          </button>
+         </form>
+        </div>
+       </div>
+       <br>
+       <div class="bg-white p-4 rounded-lg shadow-md mb-4">
+        <div class="flex items-center mb-4">
+         <img alt="User profile picture" class="w-12 h-12 rounded-full mr-4" height="50" src="https://storage.googleapis.com/a1aa/image/eOMZdZJRtrRkSyZeFzjpjxALZqJTMo9JfHwPqaDebj9UoA8PB.jpg" width="50"/>
+         <div>
+          <h3 class="text-lg font-semibold">
+           FrieMedia Officail
+          </h3>
+          <button class="follow-button bg-blue-500 text-white px-2 py-1 rounded-full">
+           Follow
+          </button>
+         </div>
+        </div>
+        <p class="mb-4">
+         Hi world! My name is Fries
+        </p>
+        <div class="flex items-center space-x-4">
+         <button class="like-button text-gray-600">
+          <i class="fas fa-heart">
+          </i>
+          Like
+         </button>
+         <button class="comment-button text-gray-600">
+          <i class="fas fa-comment">
+          </i>
+          Comment
+         </button>
+         <button class="share-button text-gray-600">
+          <i class="fas fa-share">
+          </i>
+          Share
+         </button>
+        </div>
+        <div class="comments mt-4 hidden">
+         <div class="mb-2">
+          <strong>
+           User 2:
+          </strong>
+          Great post!
+         </div>
+         <form class="comment-form flex">
+          <input class="w-full p-2 rounded-lg bg-gray-200" placeholder="Add a comment..." type="text"/>
+          <button class="bg-blue-500 text-white px-4 py-2 rounded-full ml-2" type="submit">
+           Post
+          </button>
+         </form>
+        </div>
+       </div>
+       <br>
+       <div class="bg-white p-4 rounded-lg shadow-md mb-4">
+        <div class="flex items-center mb-4">
+         <img alt="User profile picture" class="w-12 h-12 rounded-full mr-4" height="50" src="https://storage.googleapis.com/a1aa/image/eOMZdZJRtrRkSyZeFzjpjxALZqJTMo9JfHwPqaDebj9UoA8PB.jpg" width="50"/>
+         <div>
+          <h3 class="text-lg font-semibold">
+           FrieMedia Officail
+          </h3>
+          <button class="follow-button bg-blue-500 text-white px-2 py-1 rounded-full">
+           Follow
+          </button>
+         </div>
+        </div>
+        <p class="mb-4">
+         Hi world! My name is Fries
+        </p>
+        <div class="flex items-center space-x-4">
+         <button class="like-button text-gray-600">
+          <i class="fas fa-heart">
+          </i>
+          Like
+         </button>
+         <button class="comment-button text-gray-600">
+          <i class="fas fa-comment">
+          </i>
+          Comment
+         </button>
+         <button class="share-button text-gray-600">
+          <i class="fas fa-share">
+          </i>
+          Share
+         </button>
+        </div>
+        <div class="comments mt-4 hidden">
+         <div class="mb-2">
+          <strong>
+           User 2:
+          </strong>
+          Great post!
+         </div>
+         <form class="comment-form flex">
+          <input class="w-full p-2 rounded-lg bg-gray-200" placeholder="Add a comment..." type="text"/>
+          <button class="bg-blue-500 text-white px-4 py-2 rounded-full ml-2" type="submit">
+           Post
+          </button>
+         </form>
+        </div>
+       </div>
+       <br>
+       <div class="bg-white p-4 rounded-lg shadow-md mb-4">
+        <div class="flex items-center mb-4">
+         <img alt="User profile picture" class="w-12 h-12 rounded-full mr-4" height="50" src="https://storage.googleapis.com/a1aa/image/eOMZdZJRtrRkSyZeFzjpjxALZqJTMo9JfHwPqaDebj9UoA8PB.jpg" width="50"/>
+         <div>
+          <h3 class="text-lg font-semibold">
+           FrieMedia Officail
+          </h3>
+          <button class="follow-button bg-blue-500 text-white px-2 py-1 rounded-full">
+           Follow
+          </button>
+         </div>
+        </div>
+        <p class="mb-4">
+         Hi world! My name is Fries
+        </p>
+        <div class="flex items-center space-x-4">
+         <button class="like-button text-gray-600">
+          <i class="fas fa-heart">
+          </i>
+          Like
+         </button>
+         <button class="comment-button text-gray-600">
+          <i class="fas fa-comment">
+          </i>
+          Comment
+         </button>
+         <button class="share-button text-gray-600">
+          <i class="fas fa-share">
+          </i>
+          Share
+         </button>
+        </div>
+        <div class="comments mt-4 hidden">
+         <div class="mb-2">
+          <strong>
+           User 2:
+          </strong>
+          Great post!
+         </div>
+         <form class="comment-form flex">
+          <input class="w-full p-2 rounded-lg bg-gray-200" placeholder="Add a comment..." type="text"/>
+          <button class="bg-blue-500 text-white px-4 py-2 rounded-full ml-2" type="submit">
+           Post
+          </button>
+         </form>
+        </div>
+       </div>
+       <br>
+       <div class="bg-white p-4 rounded-lg shadow-md mb-4">
+        <div class="flex items-center mb-4">
+         <img alt="User profile picture" class="w-12 h-12 rounded-full mr-4" height="50" src="https://storage.googleapis.com/a1aa/image/eOMZdZJRtrRkSyZeFzjpjxALZqJTMo9JfHwPqaDebj9UoA8PB.jpg" width="50"/>
+         <div>
+          <h3 class="text-lg font-semibold">
+           FrieMedia Officail
+          </h3>
+          <button class="follow-button bg-blue-500 text-white px-2 py-1 rounded-full">
+           Follow
+          </button>
+         </div>
+        </div>
+        <p class="mb-4">
+         Hi world! My name is Fries
+        </p>
+        <div class="flex items-center space-x-4">
+         <button class="like-button text-gray-600">
+          <i class="fas fa-heart">
+          </i>
+          Like
+         </button>
+         <button class="comment-button text-gray-600">
+          <i class="fas fa-comment">
+          </i>
+          Comment
+         </button>
+         <button class="share-button text-gray-600">
+          <i class="fas fa-share">
+          </i>
+          Share
+         </button>
+        </div>
+        <div class="comments mt-4 hidden">
+         <div class="mb-2">
+          <strong>
+           User 2:
+          </strong>
+          Great post!
+         </div>
+         <form class="comment-form flex">
+          <input class="w-full p-2 rounded-lg bg-gray-200" placeholder="Add a comment..." type="text"/>
+          <button class="bg-blue-500 text-white px-4 py-2 rounded-full ml-2" type="submit">
+           Post
+          </button>
+         </form>
+        </div>
+       </div>
+       <br>
+       <div class="bg-white p-4 rounded-lg shadow-md mb-4">
+        <div class="flex items-center mb-4">
+         <img alt="User profile picture" class="w-12 h-12 rounded-full mr-4" height="50" src="https://storage.googleapis.com/a1aa/image/eOMZdZJRtrRkSyZeFzjpjxALZqJTMo9JfHwPqaDebj9UoA8PB.jpg" width="50"/>
+         <div>
+          <h3 class="text-lg font-semibold">
+           FrieMedia Officail
+          </h3>
+          <button class="follow-button bg-blue-500 text-white px-2 py-1 rounded-full">
+           Follow
+          </button>
+         </div>
+        </div>
+        <p class="mb-4">
+         Hi world! My name is Fries
+        </p>
+        <div class="flex items-center space-x-4">
+         <button class="like-button text-gray-600">
+          <i class="fas fa-heart">
+          </i>
+          Like
+         </button>
+         <button class="comment-button text-gray-600">
+          <i class="fas fa-comment">
+          </i>
+          Comment
+         </button>
+         <button class="share-button text-gray-600">
+          <i class="fas fa-share">
+          </i>
+          Share
+         </button>
+        </div>
+        <div class="comments mt-4 hidden">
+         <div class="mb-2">
+          <strong>
+           User 2:
+          </strong>
+          Great post!
+         </div>
+         <form class="comment-form flex">
+          <input class="w-full p-2 rounded-lg bg-gray-200" placeholder="Add a comment..." type="text"/>
+          <button class="bg-blue-500 text-white px-4 py-2 rounded-full ml-2" type="submit">
+           Post
+          </button>
+         </form>
+        </div>
+       </div>
+       <br>
+    <!-- Repeat for more posts -->
+     <br>
+     <!-- Main Content -->
+  <div class="container mx-auto px-4 py-6 flex flex-col md:flex-row">
+    <!-- Feed Section -->
+    <div class="w-full md:w-2/3 md:pr-4">
+     <!-- Post 1 -->
+     <div class="bg-white shadow-md rounded-lg mb-4">
+      <div class="p-4 flex items-center">
+       <img alt="Profile picture of user 1" class="w-10 h-10 rounded-full" height="50" src="https://storage.googleapis.com/a1aa/image/1SQdrL9NCgabKpB91BHMfR6EbAQYJnasumePnpMyf1dfmBFQB.jpg" width="50"/>
+       <div class="ml-3">
+        <p class="text-gray-800 font-semibold">
+         Nasty YG
+        </p>
+        <p class="text-gray-600 text-sm">
+         2 hours ago
+        </p>
+       </div>
+      </div>
+      <img alt="Post image showing a beautiful landscape" class="w-full" height="400" src="https://storage.googleapis.com/a1aa/image/e2inTEcuf0gqr0acjXSgkOnZpgsgM84w9NhfQWGRkpYkzgCoA.jpg" width="600"/>
+      <div class="p-4">
+       <div class="flex items-center justify-between">
+        <div class="flex items-center space-x-4">
+         <a class="text-gray-600 hover:text-gray-800" href="#">
+          <i class="fas fa-heart">
+          </i>
+         </a>
+         <a class="text-gray-600 hover:text-gray-800" href="#">
+          <i class="fas fa-comment">
+          </i>
+         </a>
+         <a class="text-gray-600 hover:text-gray-800" href="#">
+          <i class="fas fa-share">
+          </i>
+         </a>
+        </div>
+        <a class="text-gray-600 hover:text-gray-800" href="#">
+         <i class="fas fa-bookmark">
+         </i>
+        </a>
+       </div>
+       <p class="mt-2 text-gray-800">
+        This is a beautiful landscape!
+       </p>
+      </div>
+     </div>
+     <!-- Post 2 -->
+     <div class="bg-white shadow-md rounded-lg mb-4">
+      <div class="p-4 flex items-center">
+       <img alt="Profile picture of user 2" class="w-10 h-10 rounded-full" height="50" src="https://storage.googleapis.com/a1aa/image/CoPCttfUmfgYeJfNSiPy2LpMiMQn0c89s6XDyy2YH8JsmBFQB.jpg" width="50"/>
+       <div class="ml-3">
+        <p class="text-gray-800 font-semibold">
+         User 2
+        </p>
+        <p class="text-gray-600 text-sm">
+         5 hours ago
+        </p>
+       </div>
+      </div>
+      <img alt="Post image showing a delicious meal" class="w-full" height="400" src="https://storage.googleapis.com/a1aa/image/8KrMCiaDY3bFH1lDKGL5o5MHMFEPLnwOTRfuvbbxjGL6MoAKA.jpg" width="600"/>
+      <div class="p-4">
+       <div class="flex items-center justify-between">
+        <div class="flex items-center space-x-4">
+         <a class="text-gray-600 hover:text-gray-800" href="#">
+          <i class="fas fa-heart">
+          </i>
+         </a>
+         <a class="text-gray-600 hover:text-gray-800" href="#">
+          <i class="fas fa-comment">
+          </i>
+         </a>
+         <a class="text-gray-600 hover:text-gray-800" href="#">
+          <i class="fas fa-share">
+          </i>
+         </a>
+        </div>
+        <a class="text-gray-600 hover:text-gray-800" href="#">
+         <i class="fas fa-bookmark">
+         </i>
+        </a>
+       </div>
+       <p class="mt-2 text-gray-800">
+        Enjoying this delicious meal!
+       </p>
+      </div>
+     </div>
+     <!-- Post 3 -->
+     <div class="bg-white shadow-md rounded-lg mb-4">
+      <div class="p-4 flex items-center">
+       <img alt="Profile picture of user 3" class="w-10 h-10 rounded-full" height="50" src="https://storage.googleapis.com/a1aa/image/Wbo4XermUJ0UEKJfDM7firBH9bff7LG4MP96f2hKPhxvdGUAF.jpg" width="50"/>
+       <div class="ml-3">
+        <p class="text-gray-800 font-semibold">
+         User 3
+        </p>
+        <p class="text-gray-600 text-sm">
+         1 day ago
+        </p>
+       </div>
+      </div>
+      <img alt="Post image showing a city skyline at night" class="w-full" height="400" src="https://storage.googleapis.com/a1aa/image/Cb1etfgQPyj8RE0ecuN2oxcetxN3HggftciaXmsignTBODKgC.jpg" width="600"/>
+      <div class="p-4">
+       <div class="flex items-center justify-between">
+        <div class="flex items-center space-x-4">
+         <a class="text-gray-600 hover:text-gray-800" href="#">
+          <i class="fas fa-heart">
+          </i>
+         </a>
+         <a class="text-gray-600 hover:text-gray-800" href="#">
+          <i class="fas fa-comment">
+          </i>
+         </a>
+         <a class="text-gray-600 hover:text-gray-800" href="#">
+          <i class="fas fa-share">
+          </i>
+         </a>
+        </div>
+        <a class="text-gray-600 hover:text-gray-800" href="#">
+         <i class="fas fa-bookmark">
+         </i>
+        </a>
+       </div>
+       <p class="mt-2 text-gray-800">
+        City skyline at night looks amazing!
+       </p>
+      </div>
+     </div>
+    </div>
+    <!-- Profile Section -->
+    <div class="w-full md:w-1/3">
+     <div class="bg-white shadow-md rounded-lg p-4">
+      <div class="flex items-center">
+       <img alt="Profile picture of the logged-in user" class="w-20 h-20 rounded-full" height="100" src="https://storage.googleapis.com/a1aa/image/n49qkYDfhZRKcy4Q7qSxojEbulEeqRgXVfhFPROpsSDazgCoA.jpg" width="100"/>
+       <div class="ml-4">
+        <p class="text-gray-800 font-semibold">
+         Friesmedia
+        </p>
+        <p class="text-gray-600">
+         info@friesmedia.com
+        </p>
+       </div>
+      </div>
+      <div class="mt-4">
+       <p class="text-gray-800 font-semibold">
+        Bio:
+       </p>
+       <p class="text-gray-600">
+        This is the bio of the logged-in user. It can be a short description about the user.
+       </p>
+      </div>
+      <div class="mt-4">
+       <p class="text-gray-800 font-semibold">
+        Connectors: 120
+       </p>
+       <p class="text-gray-800 font-semibold">
+        Connecting: 180
+       </p>
+      </div>
+      <div class="mt-4">
+       <button class="w-full bg-blue-500 text-white py-2 rounded-lg">
+        Edit Profile
+       </button>
+      </div>
+     </div>
+    </div>
+   </div>
+   </section>
+  </main>
+  <footer class="bg-blue-600 p-4 text-white mt-8">
+   <div class="flex justify-between items-center">
+    <p>
+     © 2025 Fries Social Media
+    </p>
+    <nav class="space-x-4">
+     <a class="hover:text-gray-300" href="#">
+      About
+     </a>
+     <a class="hover:text-gray-300" href="#">
+      Contact
+     </a>
+     <a class="hover:text-gray-300" href="#">
+      Privacy
+     </a>
+     <a class="hover:text-gray-300" href="openfries.html">
+        Logout
+       </a>
+    </nav>
+   </div>
+  </footer>
+  <script>
+   document.querySelectorAll('.follow-button').forEach(button => {
+            button.addEventListener('click', () => {
+                if (button.textContent === 'Follow') {
+                    button.textContent = 'Unfollow';
+                    button.classList.remove('bg-blue-500');
+                    button.classList.add('bg-red-500');
+                } else {
+                    button.textContent = 'Follow';
+                    button.classList.remove('bg-red-500');
+                    button.classList.add('bg-blue-500');
+                }
+            });
+        });
+
+        document.querySelectorAll('.like-button').forEach(button => {
+            button.addEventListener('click', () => {
+                button.classList.toggle('liked');
+            });
+        });
+
+        document.querySelectorAll('.comment-button').forEach(button => {
+            button.addEventListener('click', () => {
+                const commentsSection = button.closest('.bg-white').querySelector('.comments');
+                commentsSection.classList.toggle('hidden');
+            });
+        });
+
+        document.querySelectorAll('.comment-form').forEach(form => {
+            form.addEventListener('submit', event => {
+                event.preventDefault();
+                const input = form.querySelector('input');
+                const commentText = input.value.trim();
+                if (commentText) {
+                    const newComment = document.createElement('div');
+                    newComment.classList.add('mb-2');
+                    newComment.innerHTML = `<strong>You:</strong> ${commentText}`;
+                    form.parentElement.insertBefore(newComment, form);
+                    input.value = '';
+                }
+            });
+        });
+
+        document.getElementById('upload-button').addEventListener('click', function() {
+    const videoInput = document.getElementById('video-upload');
+    const videoFile = videoInput.files[0];
+
+    if (videoFile) {
+        const videoURL = URL.createObjectURL(videoFile);
+        addVideoToFeed(videoURL);
+        videoInput.value = ''; // Clear the input
+    } else {
+        alert('Please select a video file to upload.');
+    }
+});
+
+function addVideoToFeed(videoURL) {
+    const videoFeed = document.getElementById('videos');
+    const videoElement = document.createElement('video');
+    videoElement.src = videoURL;
+    videoElement.controls = true; // Add controls for play, pause, etc.
+    videoElement.width = 400; // Set width for the video
+
+    videoFeed.appendChild(videoElement);
+}
+
+  </script>
+ </body>
+</html>

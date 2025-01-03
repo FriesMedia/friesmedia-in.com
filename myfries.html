@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FriesLift</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color: #ff0050;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+}
+
+#upload-section {
+    margin-bottom: 20px;
+}
+
+#video-feed {
+    margin-top: 20px;
+}
+
+video {
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+    </style>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"></link>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <header>
+<body class="bg-black text-white">
+    <!-- Header -->
+    <header class="flex items-center justify-between p-4 bg-black bg-opacity-75 fixed w-full z-10">
+        <div class="flex items-center space-x-7">
+    <h1 style="color: #ff0050;">Frieslift</h1>
+    <br><br><br><br>
+            <nav class="hidden md:flex space-x-6">
+                <a href="#" class="hover:text-gray-400">Home</a>
+                <a href="#" class="hover:text-gray-400">TV Shows</a>
+                <a href="#" class="hover:text-gray-400">Movies</a>
+                <a href="#" class="hover:text-gray-400">New & Popular</a>
+                <a href="#" class="hover:text-gray-400">My List</a>
+            </nav>
+        </div>
+        <div class="flex items-center space-x-4">
+            <i class="fas fa-search hover:text-gray-400 cursor-pointer"></i>
+            <i class="fas fa-bell hover:text-gray-400 cursor-pointer"></i>
+            <img src="https://placehold.co/32x32?text=User+Avatar&bg=000&fc=fff" alt="User avatar placeholder image" class="h-8 w-8 rounded-full">
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative h-screen flex items-center justify-center">
+        <img src="images/Screenshot (179).png" alt="Hero image placeholder with a dark theme" class="absolute inset-0 w-full h-full object-cover opacity-50">
+        <div class="relative z-10 text-center">
+            <h1 class="text-5xl md:text-7xl font-bold mb-4">Watch Something Incredible</h1>
+            <button class="bg-red-600 text-white px-6 py-3 rounded-md text-lg font-semibold hover:bg-red-700">Play</button>
+        </div>
+    </section>
+
+    <!-- Content Section -->
+    <section class="mt-8 px-4 md:px-8">
+        <h2 class="text-2xl md:text-3xl font-bold mb-4">Trending Now</h2>
+        <div class="flex space-x-4 overflow-x-scroll scrollbar-hide">
+            <img src="https://placehold.co/300x200?text=Movie+1&bg=000&fc=fff" alt="Movie 1 placeholder image" class="w-64 h-40 object-cover rounded-md">
+            <img src="https://placehold.co/300x200?text=Movie+2&bg=000&fc=fff" alt="Movie 2 placeholder image" class="w-64 h-40 object-cover rounded-md">
+            <img src="https://placehold.co/300x200?text=Movie+3&bg=000&fc=fff" alt="Movie 3 placeholder image" class="w-64 h-40 object-cover rounded-md">
+            <img src="https://placehold.co/300x200?text=Movie+4&bg=000&fc=fff" alt="Movie 4 placeholder image" class="w-64 h-40 object-cover rounded-md">
+            <img src="https://placehold.co/300x200?text=Movie+5&bg=000&fc=fff" alt="Movie 5 placeholder image" class="w-64 h-40 object-cover rounded-md">
+        </div>
+    </section>
+<br>
+<h1>My Fries</h1>
+</header>
+<main>
+    <section id="upload-section">
+        <input type="file" id="video-upload" accept="video/*">
+        <button id="upload-button" style="color: green;">Upload Video</button>
+    </section>
+    <section id="video-feed">
+        <h2 style="color: #ff0050;">Video Feed</h2>
+        <div id="videos"></div>
+    </section>
+</main>
+<br>
+    <section class="mt-8 px-4 md:px-8">
+        <h2 class="text-2xl md:text-3xl font-bold mb-4">Popular on Frieslift</h2>
+        <div class="flex space-x-4 overflow-x-scroll scrollbar-hide">
+            <img src="https://placehold.co/300x200?text=Show+1&bg=000&fc=fff" alt="Show 1 placeholder image" class="w-64 h-40 object-cover rounded-md">
+            <img src="https://placehold.co/300x200?text=Show+2&bg=000&fc=fff" alt="Show 2 placeholder image" class="w-64 h-40 object-cover rounded-md">
+            <img src="https://placehold.co/300x200?text=Show+3&bg=000&fc=fff" alt="Show 3 placeholder image" class="w-64 h-40 object-cover rounded-md">
+            <img src="https://placehold.co/300x200?text=Show+4&bg=000&fc=fff" alt="Show 4 placeholder image" class="w-64 h-40 object-cover rounded-md">
+            <img src="https://placehold.co/300x200?text=Show+5&bg=000&fc=fff" alt="Show 5 placeholder image" class="w-64 h-40 object-cover rounded-md">
+        </div>
+    </section>
+
+    <section class="mt-8 px-4 md:px-8">
+        <h2 class="text-2xl md:text-3xl font-bold mb-4">New Releases</h2>
+        <div class="flex space-x-4 overflow-x-scroll scrollbar-hide">
+            <img src="https://placehold.co/300x200?text=New+1&bg=000&fc=fff" alt="New release 1 placeholder image" class="w-64 h-40 object-cover rounded-md">
+            <img src="https://placehold.co/300x200?text=New+2&bg=000&fc=fff" alt="New release 2 placeholder image" class="w-64 h-40 object-cover rounded-md">
+            <img src="https://placehold.co/300x200?text=New+3&bg=000&fc=fff" alt="New release 3 placeholder image" class="w-64 h-40 object-cover rounded-md">
+            <img src="https://placehold.co/300x200?text=New+4&bg=000&fc=fff" alt="New release 4 placeholder image" class="w-64 h-40 object-cover rounded-md">
+            <img src="https://placehold.co/300x200?text=New+5&bg=000&fc=fff" alt="New release 5 placeholder image" class="w-64 h-40 object-cover rounded-md">
+        </div>
+    </section>
+
+    <script>
+        document.getElementById('upload-button').addEventListener('click', function() {
+    const videoInput = document.getElementById('video-upload');
+    const videoFile = videoInput.files[0];
+
+    if (videoFile) {
+        const videoURL = URL.createObjectURL(videoFile);
+        addVideoToFeed(videoURL);
+        videoInput.value = ''; // Clear the input
+    } else {
+        alert('Please select a video file to upload.');
+    }
+});
+
+function addVideoToFeed(videoURL) {
+    const videoFeed = document.getElementById('videos');
+    const videoElement = document.createElement('video');
+    videoElement.src = videoURL;
+    videoElement.controls = true; // Add controls for play, pause, etc.
+    videoElement.width = 400; // Set width for the video
+
+    videoFeed.appendChild(videoElement);
+}
+
+    </script>
+</body>
+</html>
+
+
+
+
+
